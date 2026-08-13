@@ -26,8 +26,8 @@ export const siteConfig: SiteConfig = {
     { label: 'Contact', href: '/contact' },
   ],
   socials: [
-    { name: 'GitHub', url: 'https://github.com', icon: 'Github' },
-    { name: 'LinkedIn', url: 'https://linkedin.com', icon: 'Linkedin' },
-    { name: 'Email', url: 'mailto:contact@jessicaosta.com', icon: 'Mail' },
+    { name: 'GitHub', url: 'https://github.com/jessica-ostaChrist28', icon: 'Github' },
+    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/jessica-john-osta-511267321', icon: 'Linkedin' },
+    { name: 'Email', url: 'mailto:jessicaostawork@gmail.com', icon: 'Mail' },
   ],
 };

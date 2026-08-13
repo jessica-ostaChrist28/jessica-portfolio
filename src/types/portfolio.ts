@@ -17,6 +17,8 @@ export type ProjectCategory =
   | 'Responsible AI'
   | 'Explainability (XAI)'
   | 'Full-Stack'
+  | 'Embedded & IoT'
+  | 'Web Systems'
   | 'Research';
 
 export interface Project {
