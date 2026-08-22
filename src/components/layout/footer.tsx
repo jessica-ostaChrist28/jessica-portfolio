@@ -5,18 +5,18 @@ import { Container } from '@/components/ui/container';
 
 export function Footer() {
   return (
-    <footer className="w-full bg-slate-950 border-t border-slate-800/80 text-slate-400 py-12 md:py-16 mt-auto">
+    <footer className="w-full bg-white border-t border-zinc-200/80 text-zinc-500 py-12 md:py-16 mt-auto">
       <Container size="lg">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 pb-12 border-b border-slate-800/60">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 pb-12 border-b border-zinc-200/60">
           {/* Brand Info */}
           <div className="md:col-span-2 space-y-4">
-            <Link href="/" className="flex items-center gap-2.5 font-bold text-slate-100 text-lg">
+            <Link href="/" className="flex items-center gap-2.5 font-bold text-zinc-900 text-lg">
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-tr from-sky-500 to-purple-600 text-slate-950 font-black text-xs">
                 JO
               </div>
               <span>Jessica Osta Portfolio</span>
             </Link>
-            <p className="text-sm text-slate-400 leading-relaxed max-w-md">
+            <p className="text-sm text-zinc-500 leading-relaxed max-w-md">
               A professional full-stack platform specializing in AI/ML, Generative AI, and Responsible AI governance. Dedicated to transparent, ethical, and performant intelligent systems.
             </p>
             <div className="flex items-center gap-3 pt-2">
@@ -25,7 +25,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub Profile"
-                className="p-2 rounded-lg bg-slate-900 border border-slate-800 hover:border-sky-500/50 hover:text-sky-400 transition-all"
+                className="p-2 rounded-lg bg-white border border-zinc-200 hover:border-sky-500/50 hover:text-blue-600 transition-all"
               >
                 <Github className="w-4 h-4" />
               </a>
@@ -34,14 +34,14 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn Profile"
-                className="p-2 rounded-lg bg-slate-900 border border-slate-800 hover:border-sky-500/50 hover:text-sky-400 transition-all"
+                className="p-2 rounded-lg bg-white border border-zinc-200 hover:border-sky-500/50 hover:text-blue-600 transition-all"
               >
                 <Linkedin className="w-4 h-4" />
               </a>
               <a
                 href={siteConfig.socials.find((s) => s.name === 'Email')?.url || 'mailto:contact@jessicaosta.com'}
                 aria-label="Email Contact"
-                className="p-2 rounded-lg bg-slate-900 border border-slate-800 hover:border-sky-500/50 hover:text-sky-400 transition-all"
+                className="p-2 rounded-lg bg-white border border-zinc-200 hover:border-sky-500/50 hover:text-blue-600 transition-all"
               >
                 <Mail className="w-4 h-4" />
               </a>
@@ -55,12 +55,12 @@ export function Footer() {
             </h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/about" className="hover:text-sky-400 transition-colors">
+                <Link href="/about" className="hover:text-blue-600 transition-colors">
                   About & Background
                 </Link>
               </li>
               <li>
-                <Link href="/projects" className="hover:text-sky-400 transition-colors">
+                <Link href="/projects" className="hover:text-blue-600 transition-colors">
                   Technical Projects
                 </Link>
               </li>
@@ -71,7 +71,7 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/skills" className="hover:text-sky-400 transition-colors">
+                <Link href="/skills" className="hover:text-blue-600 transition-colors">
                   Skills Matrix
                 </Link>
               </li>
@@ -85,23 +85,23 @@ export function Footer() {
             </h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/experience" className="hover:text-sky-400 transition-colors">
+                <Link href="/experience" className="hover:text-blue-600 transition-colors">
                   Experience & Journey
                 </Link>
               </li>
               <li>
-                <Link href="/achievements" className="hover:text-sky-400 transition-colors">
+                <Link href="/achievements" className="hover:text-blue-600 transition-colors">
                   Achievements & Research
                 </Link>
               </li>
               <li>
-                <Link href="/resume" className="hover:text-sky-400 transition-colors flex items-center gap-1">
+                <Link href="/resume" className="hover:text-blue-600 transition-colors flex items-center gap-1">
                   <span>Web Resume</span>
                   <ArrowUpRight className="w-3.5 h-3.5" />
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-sky-400 transition-colors">
+                <Link href="/contact" className="hover:text-blue-600 transition-colors">
                   Get in Touch
                 </Link>
               </li>
@@ -121,3 +121,4 @@ export function Footer() {
     </footer>
   );
 }
+

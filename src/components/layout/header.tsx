@@ -28,7 +28,7 @@ export function Header() {
       className={cn(
         'sticky top-0 z-30 w-full transition-all duration-300',
         scrolled
-          ? 'bg-slate-950/85 backdrop-blur-md border-b border-slate-800/80 shadow-lg shadow-slate-950/50 py-3'
+          ? 'bg-white/85 backdrop-blur-md border-b border-zinc-200/80 shadow-lg shadow-slate-950/50 py-3'
           : 'bg-transparent py-5'
       )}
     >
@@ -36,23 +36,23 @@ export function Header() {
         {/* Brand Logo */}
         <Link
           href="/"
-          className="group flex items-center gap-2.5 font-bold tracking-tight text-slate-100 transition-opacity hover:opacity-90"
+          className="group flex items-center gap-2.5 font-bold tracking-tight text-zinc-900 transition-opacity hover:opacity-90"
         >
           <div className="relative flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-tr from-sky-500 via-indigo-500 to-purple-600 font-black text-slate-950 shadow-md shadow-sky-500/20 group-hover:scale-105 transition-transform">
             <span>JO</span>
           </div>
           <div className="flex flex-col">
-            <span className="text-base font-bold leading-none text-slate-100 group-hover:text-sky-400 transition-colors">
+            <span className="text-base font-bold leading-none text-zinc-900 group-hover:text-blue-600 transition-colors">
               Jessica Osta
             </span>
-            <span className="text-[11px] font-medium text-slate-400 leading-tight">
+            <span className="text-[11px] font-medium text-zinc-500 leading-tight">
               AI/ML & Responsible AI
             </span>
           </div>
         </Link>
 
         {/* Desktop Navigation Links */}
-        <nav className="hidden lg:flex items-center gap-1 bg-slate-900/60 p-1.5 rounded-full border border-slate-800/80 backdrop-blur-md">
+        <nav className="hidden lg:flex items-center gap-1 bg-white/60 p-1.5 rounded-full border border-zinc-200/80 backdrop-blur-md">
           {siteConfig.mainNav.map((link) => {
             const isActive = pathname === link.href;
             return (
@@ -63,7 +63,7 @@ export function Header() {
                   'relative px-3.5 py-1.5 text-xs font-medium rounded-full transition-all duration-200 flex items-center gap-1.5',
                   isActive
                     ? 'bg-sky-500/15 text-sky-300 font-semibold border border-sky-500/30'
-                    : 'text-slate-300 hover:text-slate-100 hover:bg-slate-800/50'
+                    : 'text-zinc-600 hover:text-zinc-900 hover:bg-slate-800/50'
                 )}
               >
                 <span>{link.label}</span>
@@ -92,7 +92,7 @@ export function Header() {
             size="icon"
             onClick={() => setMobileNavOpen(true)}
             aria-label="Open Navigation Menu"
-            className="lg:hidden text-slate-300 hover:text-slate-100"
+            className="lg:hidden text-zinc-600 hover:text-zinc-900"
           >
             <Menu className="w-6 h-6" />
           </Button>
@@ -104,3 +104,4 @@ export function Header() {
     </header>
   );
 }
+

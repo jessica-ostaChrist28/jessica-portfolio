@@ -67,6 +67,7 @@ export interface RaiCaseStudy {
   readTimeMinutes: number;
   featured: boolean;
   summary: string;
+  pdfUrl?: string;
 
   // 1. Problem / Context
   context: {
